@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quarter 3 Second Graded Exercise">
+    <meta name="keywords" content="Graded, Exercise, Second, Third Quarter, Second Graded">
+    <meta name="author" content="Satyana Margaret S. Mendoza">
+    <title>Q3_2GLiMendoza</title>
+    <link rel="stylesheet" href="../css/Q3_2GLiMendoza.css">
+    <link rel="icon" href="../../../asset/darth.webp" sizes="32x32" type="image/png">
+    <script src="../js/Q3_2GLiMendoza.js" defer></script>
+</head>
+<body>
+    <form action="submit" method="post" onsubmit="return confirmSubmit()" onreset="return confirmReset()">
+
+        <label>
+            Student ID:
+            <input type="number" name="StudentID" required onblur="checkEmpty(event)">
+        </label>
+        <br><br>
+
+        <label>
+            Full Name:
+            <input type="text" name="FullName" required onblur="checkEmpty(event)">
+        </label>
+        <br><br>
+
+        <label>
+            Birthday:
+            <input type="date" name="Birthday" required onblur="checkEmpty(event)">
+        </label>
+        <br><br>
+
+        <label>
+            Email Address:
+            <input type="email" name="EmailAddress" required onblur="checkEmpty(event)">
+        </label>
+        <br><br>
+
+        <label>
+            Mobile Phone:
+            <input type="text" name="MobilePhone" required onblur="checkEmpty(event)">
+        </label>
+        <br><br>
+
+        <label>
+            Grade Level:
+            <select name="GradeLevel" required onblur="checkEmpty(event)">
+                <option value="">Select Grade Level</option>
+                <option value="g7">Grade 7</option>
+                <option value="g8">Grade 8</option>
+                <option value="g9">Grade 9</option>
+                <option value="g10">Grade 10</option>
+                <option value="g11">Grade 11</option>
+                <option value="g12">Grade 12</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>
+            Intern / Extern: <br>
+            <label>
+                <input type="radio" name="InternExtern" value="Intern" required> Intern
+            </label>
+            <label>
+                <input type="radio" name="InternExtern" value="Extern"> Extern
+            </label>
+        </label>
+        <br><br>
+
+        <label>
+            Preferred Organization / Club:
+            <select name="OrganizationClub" required onblur="checkEmpty(event)">
+                <option value="">Select Preferred Organization/Club</option>
+                <option value="bake_club">Bake Club</option>
+                <option value="celluloid">Celluloid</option>
+                <option value="mun">MUN</option>
+                <option value="likha">Likha</option>
+                <option value="volant">Volant</option>
+                <option value="sightlines">Sightlines</option>
+                <option value="kamalayan">Kamalayan</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>
+            Why do you want to join? <br>
+            <textarea name="ReasonJoin" rows="5" cols="50" required onblur="checkEmpty(event)"></textarea>
+        </label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
